@@ -28,7 +28,7 @@ public class HelloController {
         Map<String, Object> map = new HashMap<>();
 
         int random=(int) (Math.random() * 100);
-        map.put("dir", "1");
+        map.put("dir", "2");
         map.put("values",random);
 
         return map;
