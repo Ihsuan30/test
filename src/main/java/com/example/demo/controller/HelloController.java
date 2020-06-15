@@ -11,18 +11,22 @@ import java.util.Map;
 public class HelloController {
     @GetMapping(value = "/click/1")
     public Map<String, Object> hello() {
-        int random=(int) (Math.random() * 100);
+
         Map<String, Object> map = new HashMap<>();
-        map.put("values",random);
         map.put("dir", "1");
+        int random=(int) (Math.random() * 100);
+        map.put("values",random);
+
+
         return map;
 
     }
     @GetMapping(value ="/click/2")
     public Map<String, Object> click() {
-        int random=(int) (Math.random() * 100);
+
         Map<String, Object> map = new HashMap<>();
         map.put("dir", "2");
+        int random=(int) (Math.random() * 100);
         map.put("values",random);
 
         return map;
