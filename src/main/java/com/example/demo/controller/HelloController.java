@@ -13,8 +13,9 @@ public class HelloController {
     public Map<String, Object> hello() {
 
         Map<String, Object> map = new HashMap<>();
-        map.put("dir", "1");
+
         int random=(int) (Math.random() * 100);
+        map.put("dir", "1");
         map.put("values",random);
 
 
@@ -25,8 +26,9 @@ public class HelloController {
     public Map<String, Object> click() {
 
         Map<String, Object> map = new HashMap<>();
-        map.put("dir", "2");
+
         int random=(int) (Math.random() * 100);
+        map.put("dir", "2");
         map.put("values",random);
 
         return map;
